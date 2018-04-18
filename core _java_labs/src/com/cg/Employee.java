@@ -2,8 +2,8 @@ package com.cg;
 
 public class Employee {
     int empid;
- String firstName;
- String lastName;
+    String firstName;
+    String lastName;
 	static int count = 0; 
 int salary,id;
 char grade;

@@ -1,3 +1,4 @@
+
 import java.util.*;
 class Employee2{
 	
@@ -13,7 +14,7 @@ static int count=0;
 	 int dd=0;
 	 int mm=0;
 	 int yyyy=0;
-	 
+	 Date joinDate;
 	 
 	 
 	 	
@@ -45,8 +46,8 @@ static int count=0;
             System.out.println("invalid input, again enter grade");
             grade=sc.next();
        }
-
-      System.out.println("enter date");
+        
+    System.out.println("enter date");
       dd = sc.nextInt();
       if(dd > 31)
       {
@@ -67,15 +68,14 @@ static int count=0;
     	System.out.println("year is invalid");
     	yyyy = sc.nextInt();
       }
-   
+      joindate = new Date(dd,mm,yyyy) ;
       Employee e = null; 
-      e = new Employee(firstName, lastName, salary, grade, dd , mm, yyyy);
-     
-    e.displayDetails();
-
+      e = new Employee(firstName, lastName, salary, grade, joinDate);
+      
+      e.displayDetails();
+      e.getInvoices();
    
-   e.getInvoices();
-	}
+ 	}
 
 	  
 	 	

@@ -2,11 +2,11 @@ package com.cg;
 
 public class Contractor {
 	private String name;
-	public static int rate;
+public double rate;
+/*	public double rate; */
 	
 	
-	
-	public Contractor(String name, int rate){
+	public Contractor(String name, double rate){
 		this.name=name;
 		this.rate=rate;
 	}
@@ -18,8 +18,7 @@ public class Contractor {
 		// TODO Auto-generated constructor stub
 	}
 
-
-
+	
 	public void setName(String name){
 		this.name=name;
 	
@@ -27,9 +26,12 @@ public class Contractor {
 	public String getName(){
 		return name;
 	}
-	public void setRate(int rate){
+	public void setRate(double rate){
 		this.rate=rate;
 		
+	}
+	public double getRate() {
+	return rate;
 	}
 	
 }

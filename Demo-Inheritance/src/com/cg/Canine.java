@@ -5,6 +5,7 @@ abstract public class Canine extends Animal{
 		super("Grey", 1);
 	}
 	
+	
 	@Override
 	public void roam() {
 		System.out.println("I roam in a group");

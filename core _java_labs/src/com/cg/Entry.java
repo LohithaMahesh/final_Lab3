@@ -6,7 +6,6 @@ class Entry{
 	
 	public static void main(String[] args){
 	int i;
-	int j;
 	int n;
 	Date joiningdate;
 

@@ -1,50 +1,42 @@
 
 public class Employee {
-	int empid;
+	int empId;
 	String firstName;
 	String lastName;
-		static int count=0;	
+	static int count=0;	
 	int salary;
 	String grade;
-	int Date;
-	int dd, mm, yyyy;
-	
-public Employee() {
+    Date joinDate;
 
-	firstName= "";
-	lastName="";
-	salary=0;
-	grade=null;
-			
-}
-public Employee(String fn, String ln, int sal, String grade, int dd, int mm, int yyyy) {
+
+public Employee(String fn, String ln, int sal, String grade, Date joinDate) {
 	
 	this.firstName=fn;
 	this.lastName=ln;
 	this.salary=sal;
 	this.grade=grade;
-	this.dd=dd;
-	this.mm=mm;
-	this.yyyy=yyyy;
-	
+	this.joinDate=joinDate;
 }
+
 public void displayDetails() {
 		
 	count++;
-	System.out.println("empid     :" + count);
+	System.out.println("empid     :" + empId);
 	System.out.println("firstName :" + firstName);
 	System.out.println("lastName  :" + lastName);
 	System.out.println("salary    :" + salary);
 	System.out.println("grade     :" + grade);
-	System.out.println("Date      :" + dd + "/" + mm + "/" +yyyy);
-	
-}	
+	System.out.println("joinDate  :" + joinDate);
+}
+
+
 public Invoice[] getInvoices() {
 	return null;
 	
 }
 class Invoice {
 	
+}
 }
 }
 

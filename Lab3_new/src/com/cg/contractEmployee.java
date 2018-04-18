@@ -1,9 +1,10 @@
 package com.cg;
 
 class contractEmployee extends Contractor {
-	private static int noOfHours;
+	private int noOfHours;
+	private static int count;
 	private Contractor contractor;
-	private int salary;
+	private double salary;
 	private String joinDate;
 	
 	 
@@ -14,33 +15,32 @@ class contractEmployee extends Contractor {
 		}
 	*/
 	public contractEmployee() {
+		this.noOfHours=noOfHours;
+		this.salary=salary;
+		this.joinDate=joinDate;
+		this.rate=rate;
 		// TODO Auto-generated constructor stub
 	}
-
-	
-	
-	
-	public static int getNoOfHours() {
+		
+	public int getNoOfHours() {
 		return noOfHours;
 	}
 
-	public static void setNoOfHours(int noOfHours) {
-		contractEmployee.noOfHours = noOfHours;
+	public void setNoOfHours(int noOfHours) {
+		this.noOfHours = noOfHours;
 	}
 
 	
 	
-	public int getSalary() {
-		   salary = noOfHours * Contractor.rate;
+	public double getSalary() {
+		   salary = noOfHours * contractor.getRate();
 		   return salary;     
 			// TODO Auto-generated method stub
 			}
 
-
-
-
 	public void setContractor(Contractor c){
 		this.contractor=c;
+	
 	}
 	public Contractor getContractor(){
 		return contractor;
@@ -53,11 +53,5 @@ class contractEmployee extends Contractor {
 	public void setJoinDate(String joinDate){
 		this.joinDate=joinDate;
 	}
-
-
-
-
-
-
 
 }
